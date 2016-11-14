@@ -31,6 +31,7 @@ class Video():
             if self.type == 1: 
                 cnt,drawing= image_analysis.contour_operation(crop_frame,dilation)
                 if cnt is not None and len(cnt)<=800:
+                    #print len(cnt)
                     letter = match_DB.find_closest_match(cnt)
                     letter = str(letter)
                     letter = letter[0]

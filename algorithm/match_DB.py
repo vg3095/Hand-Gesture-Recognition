@@ -52,7 +52,8 @@ def find_closest_match(cnt):
 		if temp < minimum:
 		    minimum = temp
 		    l = letter
-	if l is not None and minimum<0.12:
+	if l is not None and minimum<0.025:
+		#print minimum
 		l = l[0]
 	return l
 

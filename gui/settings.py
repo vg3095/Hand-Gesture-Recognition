@@ -26,10 +26,17 @@ class Ui_Settings(object):
     def setupUi(self, Settings):
         Settings.setObjectName(_fromUtf8("Settings"))
         Settings.resize(556, 398)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Settings.sizePolicy().hasHeightForWidth())
+        Settings.setSizePolicy(sizePolicy)
+        Settings.setMinimumSize(QtCore.QSize(556, 398))
+        Settings.setMaximumSize(QtCore.QSize(556, 398))
         self.centralwidget = QtGui.QWidget(Settings)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.ContoursButton = QtGui.QPushButton(self.centralwidget)
-        self.ContoursButton.setGeometry(QtCore.QRect(210, 50, 91, 21))
+        self.ContoursButton.setGeometry(QtCore.QRect(120, 40, 91, 21))
         self.ContoursButton.setObjectName(_fromUtf8("ContoursButton"))
         self.LogReport = QtGui.QTextBrowser(self.centralwidget)
         self.LogReport.setGeometry(QtCore.QRect(20, 90, 491, 261))
@@ -37,6 +44,9 @@ class Ui_Settings(object):
         self.label = QtGui.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(30, 70, 61, 16))
         self.label.setObjectName(_fromUtf8("label"))
+        self.ContoursButton_2 = QtGui.QPushButton(self.centralwidget)
+        self.ContoursButton_2.setGeometry(QtCore.QRect(310, 40, 91, 21))
+        self.ContoursButton_2.setObjectName(_fromUtf8("ContoursButton_2"))
         Settings.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(Settings)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 556, 21))
@@ -53,6 +63,7 @@ class Ui_Settings(object):
         Settings.setWindowTitle(_translate("Settings", "Settings", None))
         self.ContoursButton.setText(_translate("Settings", "Rebuild Contours", None))
         self.label.setText(_translate("Settings", "Log Report", None))
+        self.ContoursButton_2.setText(_translate("Settings", "Calibration", None))
 
 
 # if __name__ == "__main__":

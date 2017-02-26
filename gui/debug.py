@@ -26,6 +26,8 @@ class Ui_Debug(object):
     def setupUi(self, Debug):
         Debug.setObjectName(_fromUtf8("Debug"))
         Debug.resize(614, 307)
+        Debug.setMinimumSize(QtCore.QSize(614, 307))
+        Debug.setMaximumSize(QtCore.QSize(614, 307))
         self.centralwidget = QtGui.QWidget(Debug)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.CannyEdgeLabel = QtGui.QLabel(self.centralwidget)
@@ -58,4 +60,14 @@ class Ui_Debug(object):
         self.ConvexityLabel.setText(_translate("Debug", "TextLabel", None))
         self.label.setText(_translate("Debug", "Canny Edge Detection", None))
         self.label_3.setText(_translate("Debug", "Contours & Convexity Defects", None))
+
+
+# if __name__ == "__main__":
+#     import sys
+#     app = QtGui.QApplication(sys.argv)
+#     Debug = QtGui.QMainWindow()
+#     ui = Ui_Debug()
+#     ui.setupUi(Debug)
+#     Debug.show()
+#     sys.exit(app.exec_())
 

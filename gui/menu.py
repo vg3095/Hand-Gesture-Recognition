@@ -26,6 +26,8 @@ class Ui_Menu(object):
     def setupUi(self, Menu):
         Menu.setObjectName(_fromUtf8("Menu"))
         Menu.resize(234, 258)
+        Menu.setMinimumSize(QtCore.QSize(234, 258))
+        Menu.setMaximumSize(QtCore.QSize(234, 258))
         self.centralwidget = QtGui.QWidget(Menu)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.pushButton = QtGui.QPushButton(self.centralwidget)
@@ -54,3 +56,14 @@ class Ui_Menu(object):
         self.pushButton.setText(_translate("Menu", "Start", None))
         self.pushButton_2.setText(_translate("Menu", "Train ", None))
         self.pushButton_3.setText(_translate("Menu", "Settings", None))
+
+
+# if __name__ == "__main__":
+#     import sys
+#     app = QtGui.QApplication(sys.argv)
+#     Menu = QtGui.QMainWindow()
+#     ui = Ui_Menu()
+#     ui.setupUi(Menu)
+#     Menu.show()
+#     sys.exit(app.exec_())
+

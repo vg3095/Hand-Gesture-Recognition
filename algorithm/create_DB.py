@@ -1,9 +1,11 @@
-import cv2 as opencv
 import cPickle
-import numpy as np
 import glob
 import os
+
+import numpy as np
+
 import contours_op
+import cv2 as opencv
 
 file_running = ''
 
@@ -52,8 +54,3 @@ def generate():
         image = opencv.imread(imageName)
         image = opencv.cvtColor(image,opencv.COLOR_BGR2GRAY)
         store_contour_and_poly(image, l)
-
-    
-
-
-

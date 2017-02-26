@@ -10,6 +10,18 @@
     <height>307</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>614</width>
+    <height>307</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>614</width>
+    <height>307</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Debug</string>
   </property>

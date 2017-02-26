@@ -6,6 +6,8 @@ import contours_op
 import glob
 import os
 
+cont_param = 0.03
+
 def calculate_contours(img):
 	contours, hierarchy = opencv.findContours(img,opencv.RETR_TREE,opencv.CHAIN_APPROX_SIMPLE)
 	pos = contours_op.find_largest_contour(contours)
@@ -52,10 +54,14 @@ def find_closest_match(cnt):
 		if temp < minimum:
 		    minimum = temp
 		    l = letter
-	if l is not None and minimum<0.025:
-		#print minimum
+	print l,minimum
+	global cont_param    
+	if l is not None and minimum<cont_param:
+		#print l,minimum
+		#print cont_param
 		l = l[0]
-	return l
+		#print l
+		return l
 
 def current_path():
 	path = str(os.getcwd())
